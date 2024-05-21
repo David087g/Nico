@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #EEEEEE; /* Fondo de color verde oscuro */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #c4d0d9, #d1d9dc, #dde2e3, #fff); /* Aplica un gradiente lineal con los colores de la paleta */
+    padding: 8px; /* Ajusta el espacio interior del encabezado */
+    color: white; /* Texto en color blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.inicio {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-right {
+    list-style-type: none; /* Quita los estilos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-right li {
+    margin-right: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.nav-right li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Color del texto de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav-right li a .icon {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.content {
+    padding: 20px; /* Ajusta el espacio interior del contenido */
+    color: black; /* Color del texto del contenido */
+    font-size: 20px;
+}
+
+h1 {
+    color: #006769; /* Color del texto del encabezado */
+    text-align: center;
+    font-size: 43px;
+    margin-top: 80px; /* Ajusta el margen superior para evitar la superposición con el header */
+}
+
+.Slider1 {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px; /* Añadir un límite de ancho máximo */
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.Slider1 ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+    padding: 0;
+    margin: 0;
+}
+
+.Slider1 li {
+    width: 100%;  /* Ajuste de anchura para 4 imágenes */
+    list-style: none;
+}
+
+.Slider1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor sin deformarse */
+    border-radius: 10px;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+@media (max-width: 768px) {
+    .Slider1 {
+        width: 100%;
+    }
+
+    .nav-right li a {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+

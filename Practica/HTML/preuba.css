@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EEEEEE; /* Fondo de color verde oscuro */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #053B50, #176B87, #64CCC5, #EEEEEE); /* Aplica un gradiente lineal con los colores de la paleta */
+    padding: 8px; /* Ajusta el espacio interior del encabezado */
+    color: white; /* Texto en color blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.inicio {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-right {
+    list-style-type: none; /* Quita los estilos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-right li {
+    margin-right: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.nav-right li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav-right li a .icon {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.content {
+    padding: 20px; /* Ajusta el espacio interior del contenido */
+    color: black; /* Color del texto del contenido */
+    font-size: 20px;
+}
+
+h1 {
+    color: #006769; /* Color del texto del encabezado */
+    text-align: center;
+    font-size: 43px;
+}
+
+.body2 { /* Ajusta el formulario en el centro de la página */
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+form {
+    padding: 50px 55px 85px 55px; /* Comando como si pusieras padding 4 veces: arriba, derecha, abajo, izquierda */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Da sombra a la caja del div */
+    border-radius: 20px; /* Le pone radio a la caja del div */
+    text-align: center;
+    width: 340px;
+    background: linear-gradient(180deg /* Ángulos para cambiar el color de arriba a abajo */, #DCF2F1, #7FC7D9, #365486, #0F1035, transparent 0%); /* Cambié el orden de los colores */
+}
+
+.input-group {
+    display: flex; /* Alínea los elementos todos hacia la derecha */
+    flex-direction: column; /* Alínea los elementos como columna */
+    text-align: left;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 35px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.line {
+    display: inline-block; /* Despliega la línea para que se vea */
+    width: 50px;
+    height: 7px;
+}
+
+label {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600; /* Aplica letra negrita */
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 17px 10px; /* Se hace más grande el lugar donde escribe el usuario */
+    border-radius: 10px;
+    border: 2px solid #EDEDED;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro para mejorar la legibilidad */
+}
+
+input::placeholder {
+    color: #C0C0C0;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-txt a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: #000; /* Cambié el color del texto a negro */
+    font-weight: 600;
+    border: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg /* Ángulos para cambiar el color de arriba a abajo */, #B3C8CF, #BED7DC); /* Cambié el orden de los colores */
+    box-shadow: 0 0 20px #003C43;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #E3FEF7, #77B0AA); /* Cambié el orden de los colores en el hover */
+    color: #000;
+}
+
+.back {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100px;
+    min-height: 100px;
+    z-index: -1; /* Asegura que el video esté detrás de otros elementos */
+    background-size: cover; /* Cubre todo el área del contenedor */
+}

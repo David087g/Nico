@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="crearCuenta.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img class="logo" src="../Imagenes/Logo.PNG" alt="Logo">
+                <a href="Pag1.html" class="inicio">INICIO</a>
+            </div>
+            <ul class="nav-right">
+                <li><a href=""><span class="icon">&#x1F4CD;</span> HUELLAS PERDIDAS</a></li>
+                <li><a href="#"><span class="icon">&#x1F4E9;</span> SUBIR HUELLAS</a></li>
+                <li><a href="#"><span class="icon">&#x1F4D6;</span> ADOPTA</a></li>
+                <li><a href="#"><span class="icon">&#x1F4D6;</span> CODIGO DE ETICA</a></li>
+                <li><a href="inicioSeccion1.html"><span class="icon">&#x1F511;</span> INICIAR SESION</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="back" src="../Imagenes/backgroundDog1.jpg" alt="">
+    <br><br><br><br><br><br>
+
+    <div class="body2">
+        <form action="crearCuenta.php" method="post">
+            <h2>Crea tu cuenta</h2>
+            <p>Ingresa Tus Datos</p>
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Usuario">
+
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefono" pattern="[0-9]{10}">
+                
+                <label for="email">Correo</label>
+                <input type="email" name="email" placeholder="Email" id="email">
+                
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="password" placeholder="Contraseña" id="contraseña">
+
+                <div class="form-txt"></div>
+
+                <input class="btn" type="submit" value="Crear Cuenta" name="boton">
+            </div>
+        </form>
+    </div>
+    <br><br><br><br><br>
+    <script src="crearCuenta.js"></script>
+</body>
+</html>
